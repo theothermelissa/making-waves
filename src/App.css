@@ -1,4 +1,4 @@
-.wavebox {
+.ocean {
   height: 100%;
   width: 100%;
   text-align: center;
@@ -6,10 +6,14 @@
   bottom: 0;
 }
 
-.water {
+.waterContainer {
   width: 100%;
   fill: none;
   height: 100%;
+}
+
+.waves {
+  fill: linear-gradient(#0B4A72,#0aa5a0);
 }
 
 /* #waterGradient {

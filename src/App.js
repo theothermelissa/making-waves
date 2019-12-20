@@ -8,10 +8,15 @@ function App() {
           <title>Making Waves</title>
       </head>
       <body>
-        <div className="wavebox">
-          <svg className="water">
+        <div className="ocean">
+          <svg className="waterContainer">
+            <linearGradient id="waterGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#17C3ED" />
+              <stop offset="100%" stop-color="#0B4A72" />
+            </linearGradient>
             <path
-              fill="#0B4A72"
+              className="water"
+              fill="url(#waterGradient)"
               d="
                 M 0,180
                 C 750,220
