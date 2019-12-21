@@ -16,9 +16,75 @@
   fill: linear-gradient(#0B4A72,#0aa5a0);
 }
 
-/* #waterGradient {
-  x1: 0%;
-  y1: 0%;
+.channel {
+  position: absolute;
+  bottom: 0;
+  left: 10vw;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+.markerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.marker {
+  margin: 0;
+}
+
+.redMarker {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid#DC0404;
+}
+
+.greenMarker {
+  width: 100px;
+  height: 100px;
+  background: #14CC1C;
+}
+
+.post {
+  width: 30px;
+  height: 40vh;
+  background: #2c2424;
+  margin: 0;
+}
+
+.seagull {
+  width: auto;
+  height: 15vh;
+  padding-top: 10vh;
+  animation: bobble 8s infinite linear;
+}
+
+/* TO DO : add mouseover text to explain this inside joke -- the seagull who knows how to take a channel */
+
+/* .commentBubble {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  background: white;
+  height: 200px;
+  border-radius: 50px;
 } */
+
+@keyframes bobble {
+  from {
+    transform:  rotate(0deg)
+                translate(-10px)
+                rotate(0deg);
+  }
+  to {
+    transform:  rotate(360deg)
+                translate(-10px)
+                rotate(-360deg);
+  }
+}

@@ -1,5 +1,8 @@
 import React from 'react';
 import './App.css';
+import Marker from './components/Marker.js';
+// import { ReactComponent as Seagull } from './images/seagull.svg';
+import Seagull from './images/seagull.png';
 
 function App() {
   return (
@@ -18,15 +21,15 @@ function App() {
               className="water"
               fill="url(#waterGradient)"
               d="
-                M 0,180
-                C 750,220
-                  750,50
-                  1900,50
-
-                V 800
-                H 0
-                V 50
-                Z"
+              M 0,180
+              C 750,220
+              750,50
+              1900,50
+              
+              V 800
+              H 0
+              V 50
+              Z"
             >
               <animate
                 repeatCount="indefinite"
@@ -34,41 +37,41 @@ function App() {
                 attributeName="d"
                 dur="12s"
                 values="
-                  M 0,130
-                  C 750,220
-                    750,130
-                    1900,50
-
-                  V 800
-                  H 0
-                  V 50
-                  Z;
-
+                M 0,130
+                C 750,220
+                750,130
+                1900,50
+                
+                V 800
+                H 0
+                V 50
+                Z;
+                
                   M 0,220
                   C 750,130
-                    750,50
+                  750,50
                     1900,130
-
-                  V 800
-                  H 0
-                  V 50
-                  Z;
-
-                  M 0,130
+                    
+                    V 800
+                    H 0
+                    V 50
+                    Z;
+                    
+                    M 0,130
                   C 750,50
-                    750,130
+                  750,130
                     1900,220
 
                   V 800
                   H 0
                   V 50
                   Z;
-
+                  
                   M 0,50
                   C 750,130
-                    750,220
-                    1900,130
-
+                  750,220
+                  1900,130
+                  
                   V 800
                   H 0
                   V 50
@@ -76,17 +79,22 @@ function App() {
                   
                   M 0,130
                   C 750,220
-                    750,130
-                    1900,50
-
+                  750,130
+                  1900,50
+                  
                   V 800
                   H 0
                   V 50
                   Z;
-                "
+                  "
               ></animate>
             </path>
           </svg>
+          <div className="channel">
+            <Marker className="greenMarker"/>
+            <img className="seagull bobble" src={require("./images/seagull.png")} alt="seagull" />
+            <Marker className="redMarker"/>
+          </div>
         </div>
       </body>
     </html>
